@@ -52,10 +52,11 @@ table {
 
 /***** END of RESET *****/ 
 /***for all***/
-body {
-    font-family: arial, clean, sans-serif;
-    
+
+html {
+    font-family: "Lato";
 }
+
 
 a {
     text-decoration: none;
@@ -288,7 +289,46 @@ ul#gallery_selection {
     display: none;
 }
 
+div.like_tag {
+    text-align: center;
+    position: absolute;
+    top:100px;
+    left:50px;
+    width:150px;
+    padding:10px;
+    border: solid 1px black;
+    background-color: white;
+}
+
+div.show {
+    position: relative;
+}
 
 a#gallery_button {
     cursor:pointer;
+}
+
+
+div#header_line {
+    position: absolute;
+    background-color: #00d069;
+    width: 100%;
+    height: 40px;
+    z-index:-10;
+}
+
+form#searchbox,
+nav.meta ul li a
+{
+    font-family :"Lato";
+    color:white;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.logo {
+    
+    letter-spacing: 0.3em;
+        font-family :"Lato";font-weight: 600;
+        font-size: 30px;
 }
