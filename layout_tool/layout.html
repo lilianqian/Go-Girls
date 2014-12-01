@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Design Board</title>
+
+	<script src="../js/fb.js"></script>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/byrei-dyndiv_1.0rc1.js"></script>
+	<script src="js/dragdrop.js"></script>	
+	<link rel="stylesheet" type="text/css" href="css/byrei-dyndiv_0.5.css">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+	<header>
+        <form id="searchbox" action="">
+            <input id="submit" type="submit" value="SEARCH">
+            <input id="search" type="search" >
+            
+        </form>
+        <nav class="meta">
+			<ul>
+				<li><a href="../html/likebook.html">Likebook</a></li>
+				<li><a href="../layout_tool/layout.html">Designboard</a></li>
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">Login</fb:login-button>
+			</ul>
+		</nav>
+        <a href="#" class="logo"><p>Dohouse</p></a>
+        <hr>
+    </header>
+
+	<div id="layout_all">
+		<div id="layout_board" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<div id="layout_board_toolbar">
+				<div class="layout_board_tool">Upload Floor Plan</div>
+				<div class="layout_board_tool">Tag</div>
+				<div class="layout_board_tool">Color</div>
+			</div>
+		</div>
+
+
+		<div id="layout_drop">
+			<div id="layout_drop_header">Product</div>
+			<div id="layout_drop_box">
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	 <footer>
+        <p>©2014 My Website LLC. All rightls reserved.</p>
+    </footer>
+</body>
+</html>
