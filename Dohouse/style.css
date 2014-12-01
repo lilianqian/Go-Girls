@@ -86,8 +86,9 @@ hr {
     border-bottom-width: thin;
     border-color: #777; 
 }
+
 input {
-    color: #333;
+    outline: none; 
 }
 #submit {
     border:none;
@@ -116,30 +117,91 @@ input {
     padding-right: 0;
 }
 
-
-
-.main {
-    text-align: center;
-    position: relative;
-}
-
-.main ul li {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 300;
-    padding-right: 5%;
-}
-
-.main ul li:last-child {
+.meta ul li:last-child {
     padding-right: 0;
 }
 
-nav ul li {
-    display: inline;
-    position: relative;
+.main {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+/***.main ul li:last-child {
+    padding-right: 0;
+}***/
+
+.target {
+    float: left;
+    padding-right: 5%;
 }
 
-nav ul ul {
+.target p{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.detail li{
+    float: none;
+    
+    text-align: left;
+}
+
+.color1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background-color: #fff; 
+    margin: 5px 0;
+}
+
+.color2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background-color: #f7233d; 
+    margin: 5px 0;
+}
+
+.color3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background-color: #40a0ff; 
+    margin: 5px 0;
+}
+
+.color4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background-color: #8aff9b; 
+    margin: 5px 0;
+}
+
+.color5 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background-color: #eff42a; 
+    margin: 5px 0;
+}
+
+.color6 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background-color: #333; 
+    margin: 5px 0;
+}
+
+
+/**nav ul ul {
     position: absolute;
     display: none;
 }
@@ -149,37 +211,30 @@ nav ul li:hover ul {
     margin: 10px;
     padding: 5px;
     background: #eee;
+}**/
+
+
+section {
+    width: 90%;
+    margin: 0 auto;
+    
 }
 
-
-/***nav ul li:hover>ul li{
-    float: none; 
-    display: block;
+.column {
+    float: left;
+    margin: 30px 0 0 3%;
+    width: 31.3333333%;   
 }
 
-nav ul li:hover>ul li a {
-    color: #666;
-    min-width: 150px;
+.column:first-child {
+    margin: 30px 0 0 0;
 }
-
-nav ul li:hover>ul li a:hover {
-    color:#fff;
-}
-
-
-
-nav ul li ul {
-    position: absolute;
-}***/
-
 
 .show {
     position: relative;
     left: 0;
     right: 0;
-    margin: 30px 0 0 5%;
-    width: 26.666666%;
-    float: left;
+    margin-bottom: 20px;
     background: #eee;
 }
 
@@ -192,7 +247,7 @@ nav ul li ul {
 }
 
 .like {
-    width: 15%;
+    width: 13%;
     height: auto;
     position: absolute;
     top: 20px;
@@ -200,8 +255,17 @@ nav ul li ul {
 }
 
 .show p {
-    padding: 20px 10px;
+    padding: 10px 15px;
     font-size: 12px;
+}
+
+.show p:nth-child(4){
+    text-align: right;
+}
+
+.numlike {
+    width: 5%;
+    height: auto;
 }
 
 footer {
