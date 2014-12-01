@@ -236,6 +236,7 @@ section {
     right: 0;
     margin-bottom: 20px;
     background: #eee;
+    border: 1px solid #ccc;
 }
 
 .mainimg {
