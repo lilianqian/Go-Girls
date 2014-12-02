@@ -50,6 +50,9 @@
 
 
 /* ------------------ my style sheet -------------------- */
+body {
+  font-family :"Lato";
+}
 
 .clear{
   clear:both;

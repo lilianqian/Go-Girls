@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DoHouse</title>
+
+     <script src="../js/fb.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" >
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+    
+</head>
+
+<script>
+</script>
+
+<body>
+    
+    <header>
+        <div id="header_line"></div>
+        <!--<img src="logo.png" alt="VW logo" title="VW logo">-->
+        <form id="searchbox" action="">
+            <input id="submit" type="submit" value="SEARCH">
+            <input id="search" type="search" >
+            
+        </form>
+        <nav class="meta">
+            <ul>
+                <li><a href="likebook.html">Likebook</a></li>
+                <li><a href="../layout_tool/layout.html">Designboard</a></li>
+                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">Login
+</fb:login-button>
+                
+            </ul>
+        </nav>
+        <a href="#" class="logo">
+            <img src="../img/logo.png">
+        </a>
+        
+        <nav class="main">
+            <ul>
+                <li>
+                    <a href="../index.html" id="gallery_button" >Gallery <div class="arrow up"></div></a>
+                    <hr>
+                    
+                </li>
+            </ul>
+            <p class="clear"></p>
+        </nav>
+       
+    </header>
+    
+    <section>
+
+        <div id="single">
+            <div id="single_column">
+                <img class="mainimg" src="../img/livingroom.jpg" />
+            </div>
+            <div id="single_column">
+                <div id="up">
+                    <a href="#"><img class="like" src="../img/liked.png" /></a>
+                    <p>Dear Lillie Fall Home Tour - I love this peaceful
+        bedroom.</p>
+                    <p><img class="numlike" src="../img/liked.png" />123</p>
+                </div>
+            </div>
+        </div>
+
+            
+        <p class="clear"></p>
+    
+    </section>
+    
+    <footer>
+        <p>©2014 My Website LLC. All rightls reserved.</p>
+    </footer>
+    
+    <script src="../main.js"></script>
+
+</body>
+</html>
