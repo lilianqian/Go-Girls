@@ -105,7 +105,7 @@ input[value] {
 }
 
 #submit {
-    border:none;
+    
     background: rgba(0, 0, 0, 0);
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
@@ -174,21 +174,27 @@ input[value] {
     padding-bottom: 10px;
 }
 
-
-#color1 {
+.circle {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     border: 1px solid #bbb;
-    background-color: #fff; 
     margin: 5px 10px;
     position: relative;
+}
+
+#color1 {
+    
+    
+    background-color: #fff; 
+    
 }
 
 #color1 h5 {
     position: absolute;
     top: 25%;
     left: 20%;
+    text-transform: none;
 }
 
 #color2 {
@@ -299,8 +305,30 @@ input[value] {
 }
 
 
+a.active#color1 {
+    border-radius: 50%;
+    border: 3px solid #b3f900;
 
+}
 
+#apply {
+    color:#fff;
+    float: right;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    padding: 10px;
+    width: 35px;
+    height:12px;
+    background: #b3f900; 
+    background: -moz-linear-gradient(45deg,  #b3f900 2%, #f5f76c 100%, #ffffff 100%, #f5f76c 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(2%,#b3f900), color-stop(100%,#f5f76c), color-stop(100%,#ffffff), color-stop(100%,#f5f76c)); 
+    background: -webkit-linear-gradient(45deg,  #b3f900 2%,#f5f76c 100%,#ffffff 100%,#f5f76c 100%);
+    background: -o-linear-gradient(45deg,  #b3f900 2%,#f5f76c 100%,#ffffff 100%,#f5f76c 100%); 
+    background: -ms-linear-gradient(45deg,  #b3f900 2%,#f5f76c 100%,#ffffff 100%,#f5f76c 100%);
+    background: linear-gradient(45deg,  #b3f900 2%,#f5f76c 100%,#ffffff 100%,#f5f76c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3f900', endColorstr='#f5f76c',GradientType=1 ); 
+}
 
 
 /**nav ul ul {
@@ -417,10 +445,11 @@ ul#gallery_selection {
 .arrow {
     width: 5px;
     height: 5px;
-    border-top:1px solid #333;
-    border-right:1px solid #333;
+    border-top:2px solid #a2d400;
+    border-right:2px solid #a2d400;
     display: inline-block;
     margin-left: 5px;
+
     
 }
 
@@ -463,6 +492,10 @@ div.like_tag {
     background: linear-gradient(45deg,  #b3f900 2%,#f5f76c 100%,#ffffff 100%,#f5f76c 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3f900', endColorstr='#f5f76c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+}
+
+#likebook_back {
+    color: #b3f900;
 }
 
 div.likebook {
