@@ -28,8 +28,8 @@ function loadFurnitureIcon(fName, i) {
 			e.stopPropagation();
 			$(this).attr("style","display:none;");
 			$(this).parent().css({
-				"left":"0",
-				"top":"0",
+				"left":60 * (i % 2),
+				"top":60 * Math.floor(i / 2),
 				"width":"50px",
 				"height":"50px"
 			});
