@@ -414,6 +414,7 @@ div.show .mainimg {
     position: absolute;
     top: 20px;
     left: 85%;
+	transition: all 0.3s ease-out;
 }
 .like:hover {
 
@@ -421,8 +422,8 @@ div.show .mainimg {
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
     
 }
 
@@ -599,9 +600,12 @@ a.logo {
 }
 
 /***singleimg***/
-.single_body{
+.single_body {
 	background:#f5f5f5;
-	font-family:'lato', "helvatica", "sans-serif";
+	font-family: "Lato";
+	}
+.single_body section{
+	background:#f5f5f5;
 	}
 
 #single {
@@ -655,8 +659,10 @@ a.logo {
 	}
 	
 #single_column_R hr{
-	width: 100%;
-    border-color:#eee;
+	width: 80%;
+    border-color: #b3f900;
+    size: 0.5px;
+	margin-left:10%;
 	}
 	
 #single ul.tag h3{
@@ -677,3 +683,30 @@ div#single_column_R_wrapper p:nth-of-type(2){
 	color:#929292;
 	margin:10px 0 15px 0;
 	}
+#single_column_R h2{
+	color:#E8FF00;
+	margin-top:20px;
+	margin-bottom:20px;
+	}
+#single_column_R_wrapper div a{
+	display:inline-block;
+}
+
+.single_imgwrapper{
+	width: 200px;
+    height:200px;
+    overflow: hidden;
+    margin:0 10px 20px 0;
+    position: relative;
+	border-radius:5px;
+	}
+.crop {
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto; 
+    height: auto;
+    width: auto;
+}
