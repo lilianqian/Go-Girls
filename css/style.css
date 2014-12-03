@@ -399,6 +399,16 @@ div.show .mainimg {
     top: 20px;
     left: 85%;
 }
+.like:hover {
+
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    
+}
 
 .show p {
     padding: 10px 15px;
