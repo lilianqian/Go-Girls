@@ -641,7 +641,9 @@ a.logo {
 #single ul.tag li{
 	display:inline-block;
 	margin-bottom:10px;
-	padding:5px 5px 5px 5px;
+	margin-right:8px;
+	padding:5px 13px 5px 13px;
+	border-radius:5px;
 	color:#fff;
 	background: #6eae43; /* Old browsers */
 background: -moz-linear-gradient(45deg,  #6eae43 0%, #9ecb3a 100%); /* FF3.6+ */
