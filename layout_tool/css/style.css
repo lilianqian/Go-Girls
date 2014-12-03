@@ -67,6 +67,7 @@ div#layout_board {
 
 div#layout_all {
   width:920px;
+  height: 600px;
   display: block;
   margin: 0 auto 0 auto;
 }
@@ -105,7 +106,7 @@ div#layout_drop {
 div#layout_drop_box {
   position: relative;
   width:120px;
-  height:800px;
+  height:600px;
   margin-top: 20px;
 }
 
@@ -167,5 +168,35 @@ div#layout_drop_header{
   text-align: center;
 }
 
+div.layout_furniture {
+  vertical-align: center;
+  margin: 0 auto;
+  width: 90%;
+}
 
+div.layout_furniture_column {
+  width:32%;
+  margin-right: 2%;
+  float: left;
+}
 
+div.layout_furniture_column#col_3 {
+  margin-right: 0;
+}
+div.layout_furniture_column div {
+  margin-bottom: 20px;
+}
+
+div.layout_furniture_column div img{
+  width: 100%;
+}
+
+img.remove {
+  display: none;
+  position: relative;
+  z-index: 200;
+  width: 40%;
+  top: -5px;
+  left: 45px;
+  cursor: pointer;
+}
