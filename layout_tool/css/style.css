@@ -121,7 +121,8 @@ div#layout_board_toolbar {
   padding:10px;
   height: 30px;
   text-align: center;
-
+  background:#efefef;
+/*
   background: #b3f900; 
   background: -moz-linear-gradient(45deg,  #b3f900 2%, #f5f76c 100%, #ffffff 100%, #f5f76c 100%);
   background: -webkit-gradient(linear, left bottom, right top, color-stop(2%,#b3f900), color-stop(100%,#f5f76c), color-stop(100%,#ffffff), color-stop(100%,#f5f76c)); 
@@ -129,11 +130,12 @@ div#layout_board_toolbar {
   background: -o-linear-gradient(45deg,  #b3f900 2%,#f5f76c 100%,#ffffff 100%,#f5f76c 100%); 
   background: -ms-linear-gradient(45deg,  #b3f900 2%,#f5f76c 100%,#ffffff 100%,#f5f76c 100%);
   background: linear-gradient(45deg,  #b3f900 2%,#f5f76c 100%,#ffffff 100%,#f5f76c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3f900', endColorstr='#f5f76c',GradientType=1 ); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3f900', endColorstr='#f5f76c',GradientType=1 ); */
+  
 }
 div.layout_board_tool {
   display: inline-block;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(1, 1, 0, 1);
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
@@ -145,7 +147,7 @@ div.layout_board_tool {
 }
 
 div.layout_board_tool:hover {
-  background-color: black;
+  background-color: #b3f900;
   color:white;
 } 
 

@@ -16,67 +16,49 @@
 <script>
 </script>
 
-<body>
-    
-    <header>
-        <div id="header_line"></div>
-        <!--<img src="logo.png" alt="VW logo" title="VW logo">-->
-        <form id="searchbox" action="">
-            <input id="submit" type="submit" value="SEARCH">
-            <input id="search" type="search" >
-            
-        </form>
-        <nav class="meta">
-            <ul>
-                <li><a href="likebook.html"><img src="../img/likebook-icon.png" width=15px height=auto/>Likebook</a></li>
-                <li><a href="../layout_tool/layout.html"><img src="../img/designboard-icon.png" width=15px height=auto/>Designboard</a></li>
-                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">Login
-</fb:login-button>
-                
-            </ul>
-        </nav>
-        <a href="#" class="logo">
-            <img src="../img/logo.png">
-        </a>
-        
-        <nav class="main">
-            <ul>
-                <li>
-                    <a href="../index.html" id="gallery_button" >Gallery <div class="arrow up"></div></a>
-                    <hr>
-                    
-                </li>
-            </ul>
-            <p class="clear"></p>
-        </nav>
-       
-    </header>
-    
+<body class="single_body">
+
+  
     <section>
 
         <div id="single">
+         <a href="../index.html"><img class="single_home" src="../img/Btn_exit.png" width=20px height=auto></a>
+         <p class="clear"></p>
             <div id="single_column">
-                <img class="mainimg" src="../img/livingroom.jpg" />
+                <a href="#"><img class="backward" src="../img/Btn_back.png" /></a>   
+                <img class="single_mainimg" src="../img/livingroom.jpg" />
+                <a href="#"><img class="backward" src="../img/Btn_next.png" /></a>
+                           
             </div>
-            <div id="single_column">
-                <div id="up">
-                    <a href="#"><img class="like" src="../img/liked.png" /></a>
-                    <p>Dear Lillie Fall Home Tour - I love this peaceful
+            
+            <div id="single_column_R">              
+                   <div id="single_column_R_wrapper">
+                   <p><img class="numlike" src="../img/liked.png" />123</p>
+                   
+                   <p>Dear Lillie Fall Home Tour - I love this peaceful
         bedroom.</p>
-                    <p><img class="numlike" src="../img/liked.png" />123</p>
-                </div>
+                   <ul class="tag">
+                   <h3>tags</h3>
+                   <li>livingroom</li>
+                   <li>modern</li>
+                   <li>grey</li>
+                   <li>black</li>
+                   <li>white</li>
+                   <li>products</li>
+
+                 
+                   </ul>
+                    
+                    </div>
             </div>
+            <p class="clear"></p>
         </div>
 
             
         <p class="clear"></p>
     
     </section>
-    
-    <footer>
-        <p>©2014 My Website LLC. All rightls reserved.</p>
-    </footer>
-    
+ 
     <script src="../main.js"></script>
 
 </body>
