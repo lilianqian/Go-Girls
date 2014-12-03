@@ -18,19 +18,200 @@ $(document).ready(function() {
 $(document).ready(function() {
 	var counter = 0;
 
-    $('.circle').on("click", function(e) {
+    $('#color1').on("click", function(e) {
     	
     	if (counter % 2 === 0){		
 			$(this).css({"border": "3px solid #b3f900"});
 		
 		} else {
-			$(this).css({"border": "1px solid #bbb"});
+			$(this).css({"border": "3px solid #efefef"});
 		}
 
 		counter = counter+1;
         e.preventDefault();
     });
 });
+
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color2').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color3').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color4').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color5').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color6').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color7').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color8').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color9').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color10').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color11').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+$(document).ready(function() {
+	var counter = 0;
+
+    $('#color12').on("click", function(e) {
+    	
+    	if (counter % 2 === 0){		
+			$(this).css({"border": "3px solid #b3f900"});
+		
+		} else {
+			$(this).css({"border": "3px solid #efefef"});
+		}
+
+		counter = counter+1;
+        e.preventDefault();
+    });
+});
+
 
 
 
@@ -44,6 +225,13 @@ $(document).ready(function() {
 	        e.preventDefault();
 	    }
 	});
+});
+
+$('.delete').on('click', function(){
+        var answer = confirm('are you sure?')
+        if (answer){
+            $(this).closest('.show').remove();
+        }
 });
 
 
