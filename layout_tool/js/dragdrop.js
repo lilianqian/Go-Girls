@@ -68,7 +68,7 @@ function showLayoutFurniture(str) {
 	str = str.substring(0, str.indexOf("-"));
 	if ($("div.layout_furniture").attr("id") !== str) {
 		loadFurniturePic(str);
-		window.location = '#';
+		//window.location = '#';
 	}
 }
 
