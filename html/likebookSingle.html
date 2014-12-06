@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DoHouse</title>
+
+    <script src="../js/fb.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" >
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+   
+    
+    
+</head>
+
+<script>
+</script>
+
+<body onload="makeSingleLikeBookPage()">
+    
+    <header>
+        <div id="header_line"></div>
+        <!--<img src="logo.png" alt="VW logo" title="VW logo">-->
+        <form id="searchbox" action="">
+            <input id="submit" type="submit" value="SEARCH">
+            <input id="search" type="search" >
+            
+        </form>
+        <nav class="meta">
+            <ul>
+                <li><a href="likebook.html"><img src="../img/likebook-icon.png" width=15px height=auto/>Likebook</a></li>
+                <li><a href="../layout_tool/layout.html"><img src="../img/designboard-icon.png" width=15px height=auto/>Designboard</a></li>
+                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">Login
+</fb:login-button>
+                
+            </ul>
+        </nav>
+        <a href="../index.html" class="logo">
+            <img src="../img/logo.png"/>
+        </a>
+         <nav class="main">
+            <ul>
+                <li>
+                    <span><a id="likebook_back" href="likebook.html">LikeBook</a></span>
+                    <!--<a id="gallery_button" >Search in Gallery<div class="arrow up"></div></a>-->
+                    <hr>
+                </li>
+            </ul>
+            <p class="clear"></p>
+        </nav>
+       
+    </header>
+    
+    <section>
+
+        <div class="column" id="col-1"></div>
+        <div class="column" id="col-2"></div>
+        <div class="column" id="col-3"></div>
+
+        <p class="clear"></p>
+    
+    </section>
+    
+    <footer>
+        <p>©2014 My Website LLC. All rightls reserved.</p>
+    </footer>
+    
+    <script src="../main.js"></script>
+
+</body>
+</html>

@@ -21,6 +21,12 @@ $(document).ready(function() {
 		makeSingleDesignPage(this);
 	});
 
+	$(".like_tag").on("click", function(){
+		var tag = $(this).html();
+		console.log(tag);
+		loadLikeSinglePage(tag);
+	});
+
 });
 
 
@@ -41,7 +47,7 @@ function makeSingleDesignPage(obj) {
 	var singleSection = $("<section class='single-design-page'></section>");
 
 	var header = $('<div id="single"> \
-		<img class="single_home" src="img/Btn_exit.png" width=20px height=auto onclick="closeSingelPage()">\
+		<img class="single_home" src="img/Btn_exit.png" width=20px height=auto onclick="closeSinglePage()">\
          <p class="clear"></p></div>');
 	var singleCol = $('<div id="single_column">'+
    
@@ -88,8 +94,188 @@ function makeSingleDesignPage(obj) {
 
 }
 
-function closeSingelPage() {
+function closeSinglePage() {
 	window.location ="";
 	$("section.single-design-page").remove();
 	$("div.main-page").css("display","block");
 }
+
+function loadLikeSinglePage(tag) {
+	switch (tag){
+		case "Living room":
+			window.location = "../html/livingroom.html";
+			break;
+		case "Bedroom":
+			window.location = "../html/likebookSingle.html#bedroom";
+			break;
+		case "Garden":
+			window.location = "../html/likebookSingle.html#garden";
+			break;
+		case "Kids Room":
+			window.location = "../html/likebookSingle.html#kids";
+			break;
+		case "Kitchen":
+			window.location = "../html/likebookSingle.html#kitchen";
+			break;
+		case "Dining room":
+			window.location = "../html/likebookSingle.html#diningroom";
+			break;
+		case "Bathroom":
+			window.location = "../html/likebookSingle.html#bathroom";
+			break;
+		case "Stairway":
+			window.location = "../html/likebookSingle.html#stairway";
+			break;
+		case "Hallway":
+			window.location = "../html/likebookSingle.html#hallway";
+			break;
+	}
+}
+
+function makeSingleLikeBookPage() {
+	var tag = document.URL.substring(document.URL.indexOf("#")+1);
+	$("#likebook_back").append("<a>"+tag+"</a>");
+	switch (tag) {
+		case "bedroom":
+
+			for (var i = 0; i < 55;i++) {
+				var imgUrl = "../img/bedroom/bd" + (i+1) +".jpg";
+
+				var mainDiv = $('<div class="show">\
+		                <img class="mainimg"/>\
+		                <a href="#" class="delete"><img class="like" src="../img/liked.png" /></a>\
+		                <p>Dear Lillie Fall Home Tour - I love this peaceful bedroom.</p>\
+		                <p><img class="numlike" src="../img/liked.png" />123</p></div>');
+
+				mainDiv.find(".mainimg").attr("src",imgUrl);
+
+				$("div.column#col-" + (i%3+1)).append(mainDiv);
+
+			}
+		break;
+
+	case "garden":
+			for (var i = 0; i < 1;i++) {
+				var imgUrl = "../img/garden/gd" + (i+1) +".jpg";
+
+				var mainDiv = $('<div class="show">\
+		                <img class="mainimg"/>\
+		                <a href="#" class="delete"><img class="like" src="../img/liked.png" /></a>\
+		                <p>Dear Lillie Fall Home Tour - I love this peaceful bedroom.</p>\
+		                <p><img class="numlike" src="../img/liked.png" />123</p></div>');
+
+				mainDiv.find(".mainimg").attr("src",imgUrl);
+
+				$("div.column#col-" + (i%3+1)).append(mainDiv);
+
+			}
+		break;
+	
+
+	case "kids":
+			for (var i = 0; i < 1;i++) {
+				var imgUrl = "../img/kidsroom/kd" + (i+1) +".jpg";
+
+				var mainDiv = $('<div class="show">\
+		                <img class="mainimg"/>\
+		                <a href="#" class="delete"><img class="like" src="../img/liked.png" /></a>\
+		                <p>Dear Lillie Fall Home Tour - I love this peaceful bedroom.</p>\
+		                <p><img class="numlike" src="../img/liked.png" />123</p></div>');
+
+				mainDiv.find(".mainimg").attr("src",imgUrl);
+
+				$("div.column#col-" + (i%3+1)).append(mainDiv);
+
+			}
+		break;
+	
+
+	case "kitchen":
+			for (var i = 0; i < 55;i++) {
+				var imgUrl = "../img/bedroom/bd" + (i+1) +".jpg";
+
+				var mainDiv = $('<div class="show">\
+		                <img class="mainimg"/>\
+		                <a href="#" class="delete"><img class="like" src="../img/liked.png" /></a>\
+		                <p>Dear Lillie Fall Home Tour - I love this peaceful bedroom.</p>\
+		                <p><img class="numlike" src="../img/liked.png" />123</p></div>');
+
+				mainDiv.find(".mainimg").attr("src",imgUrl);
+
+				$("div.column#col-" + (i%3+1)).append(mainDiv);
+
+			}
+		break;
+
+	case "diningroom":
+			for (var i = 0; i < 2;i++) {
+				var imgUrl = "../img/diningroom/dr" + (i+1) +".jpg";
+
+				var mainDiv = $('<div class="show">\
+		                <img class="mainimg"/>\
+		                <a href="#" class="delete"><img class="like" src="../img/liked.png" /></a>\
+		                <p>Dear Lillie Fall Home Tour - I love this peaceful bedroom.</p>\
+		                <p><img class="numlike" src="../img/liked.png" />123</p></div>');
+
+				mainDiv.find(".mainimg").attr("src",imgUrl);
+
+				$("div.column#col-" + (i%3+1)).append(mainDiv);
+
+			}
+		break;
+
+	case "stairway":
+			for (var i = 0; i < 41;i++) {
+				var imgUrl = "../img/stairway/st" + (i+1) +".jpg";
+
+				var mainDiv = $('<div class="show">\
+		                <img class="mainimg"/>\
+		                <a href="#" class="delete"><img class="like" src="../img/liked.png" /></a>\
+		                <p>Dear Lillie Fall Home Tour - I love this peaceful bedroom.</p>\
+		                <p><img class="numlike" src="../img/liked.png" />123</p></div>');
+
+				mainDiv.find(".mainimg").attr("src",imgUrl);
+
+				$("div.column#col-" + (i%3+1)).append(mainDiv);
+
+			}
+		break;
+	
+
+	case "bathroom":
+			for (var i = 0; i < 27;i++) {
+				var imgUrl = "../img/bathroom/ba" + (i+1) +".jpg";
+
+				var mainDiv = $('<div class="show">\
+		                <img class="mainimg"/>\
+		                <a href="#" class="delete"><img class="like" src="../img/liked.png" /></a>\
+		                <p>Dear Lillie Fall Home Tour - I love this peaceful bedroom.</p>\
+		                <p><img class="numlike" src="../img/liked.png" />123</p></div>');
+
+				mainDiv.find(".mainimg").attr("src",imgUrl);
+
+				$("div.column#col-" + (i%3+1)).append(mainDiv);
+
+			}
+		break;
+
+	case "hallway":
+			for (var i = 0; i < 3;i++) {
+				var imgUrl = "../img/hallway/hw" + (i+1) +".jpg";
+
+				var mainDiv = $('<div class="show">\
+		                <img class="mainimg"/>\
+		                <a href="#" class="delete"><img class="like" src="../img/liked.png" /></a>\
+		                <p>Dear Lillie Fall Home Tour - I love this peaceful bedroom.</p>\
+		                <p><img class="numlike" src="../img/liked.png" />123</p></div>');
+
+				mainDiv.find(".mainimg").attr("src",imgUrl);
+
+				$("div.column#col-" + (i%3+1)).append(mainDiv);
+
+			}
+		break;
+	}
+
+}
+	
