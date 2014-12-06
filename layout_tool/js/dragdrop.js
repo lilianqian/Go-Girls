@@ -19,9 +19,14 @@ function loadFurnitureIcon(fName, i) {
 		var div = $("<div class='dynDiv_moveDiv' id='move"+fName+"'>");
 		var removeButton = $("<img class='remove' src='../img/remove.png'>");
 		
-		div.on("click",function(){
+		div.on("mousedown",function(){
 			showLayoutFurniture(fName);
 			showRemoveButton(this);
+		});
+
+		
+		div.on("hover",function(){
+			$(this).find(".remove").attr("style","display:block;");
 		});
 
 		removeButton.on("click",function(e){
