@@ -4,15 +4,18 @@ $(document).ready(function() {
 	$("a#gallery_button").on("click",function(){
 
 		if (counter % 2 === 0){		
-			$("ul#gallery_selection").css({"display":"block"});
+			$("ul#gallery_selection").css("max-height","444px");
+				counter = counter+1;
+				
 		
 		} else {
-			$("ul#gallery_selection").css({"display":"none"});
+			$("ul#gallery_selection").css("max-height","0px");
+					counter = counter+1;
+					
+			
 		}
-
-		counter = counter+1;
-		
 	});
+
 });
 
 $(document).ready(function() {

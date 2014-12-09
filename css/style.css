@@ -180,10 +180,12 @@ input[value] {
 }***/
 
 .target {
-    float: left;
-    width: 25.33333%;
+    /*float: left;*/
+    display: inline-block;
+    width: 25%;
     padding-left: 4%;
     padding-right: 4%;
+    vertical-align: text-top;
 }
 
 .target p{
@@ -543,7 +545,7 @@ nav.main{
 }
 
 ul#gallery_selection {
-    display: none;
+    /*display: none;*/
 }
 
 .arrow {
@@ -749,6 +751,21 @@ div.info div p{
 font-size:14px;	
 margin-bottom:15px;
 color:#FFF;
-
-
 }
+
+
+ul#gallery_selection {
+    max-height: 0px;
+    overflow: hidden;
+
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+}
+
+
+
+a#gallery_button:hover #gallery_selection {
+    max-height: 444px;
+}
+
