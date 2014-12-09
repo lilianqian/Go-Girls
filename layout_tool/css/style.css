@@ -226,7 +226,7 @@ div#mobile_forbidden{
 }
 
 /* been viewed on phone screen, resolution at most 500px */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 500px) {
 
   div#layout_all {
     position: relative;
@@ -268,7 +268,7 @@ div#mobile_forbidden{
     z-index: 200;
     margin: 200px 10%;
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 300;
   }
 
   p#mobile_forbidden_text b {
