@@ -134,7 +134,7 @@ function loadLikeSinglePage(tag) {
 
 function makeSingleLikeBookPage() {
 	var tag = document.URL.substring(document.URL.indexOf("#")+1);
-	$("#likebook_back").append("<a>"+tag+"</a>");
+	$("#likebook_back").append("<a>"+"/"+tag+"</a>");
 	switch (tag) {
 		case "bedroom":
 
