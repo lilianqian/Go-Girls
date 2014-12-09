@@ -22,11 +22,19 @@ function loadFurnitureIcon(fName, i) {
 		div.on("mousedown",function(){
 			showLayoutFurniture(fName);
 			showRemoveButton(this);
+			$(this).find(".dynDiv_resizeDiv_br").attr("style","display:block;");
+		});
+
+		div.on("mouseover",function(){
+			showLayoutFurniture(fName);
+			showRemoveButton(this);
+			$(this).find(".dynDiv_resizeDiv_br").attr("style","display:block;");
 		});
 
 		
-		div.on("hover",function(){
-			$(this).find(".remove").attr("style","display:block;");
+		div.on("mouseleave",function(){
+			$(this).find(".remove").attr("style","display:none;");
+			$(this).find(".dynDiv_resizeDiv_br").attr("style","display:none;");
 		});
 
 		removeButton.on("click",function(e){
@@ -54,12 +62,13 @@ function loadFurnitureIcon(fName, i) {
 		});
 
 
-		var tl = '<div class="dynDiv_resizeDiv_tl"></div>';
-		var tr = '<div class="dynDiv_resizeDiv_tr"></div>';
-		var bl = '<div class="dynDiv_resizeDiv_bl"></div>';
+		//var tl = '<div class="dynDiv_resizeDiv_tl"></div>';
+		//var tr = '<div class="dynDiv_resizeDiv_tr"></div>';
+		//var bl = '<div class="dynDiv_resizeDiv_bl"></div>';
 		var br = '<div class="dynDiv_resizeDiv_br"></div>';
 		div.append(removeButton);
-		div.append(tl, tr, bl, br);
+		//div.append(tl, tr, bl, br);
+		div.append(br);
 		$("div#layout_drop_box").append(div);
 
 		count++;

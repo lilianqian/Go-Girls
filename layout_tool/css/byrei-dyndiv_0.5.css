@@ -8,10 +8,11 @@
 }
 
 .dynDiv_resizeDiv_tl,.dynDiv_resizeDiv_tr,.dynDiv_resizeDiv_bl,.dynDiv_resizeDiv_br {
- opacity:0;
+	display: none;
+ opacity:1;
  width: 10px;
  height: 10px;
- background: #faa;
+ background: #6eae43;
  border: 1px solid #000;
  position: absolute;
 }
