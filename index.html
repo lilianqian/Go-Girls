@@ -8,9 +8,11 @@
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="css/meta_style.css" >
     <link rel="stylesheet" type="text/css" href="css/singleDesignStyle.css" >
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
     
 </head>
 
@@ -20,7 +22,11 @@
 <body>
 	<div class="main-page">
     <header>
-        <div id="header_line"></div>
+        <a href="#" class="logo">
+            <img src="img/logo.png"/>
+        </a>
+
+        <div id="header_line">
         <!--<img src="logo.png" alt="VW logo" title="VW logo">-->
         <form id="searchbox" action="">
             <input id="submit" type="submit" value="SEARCH">
@@ -29,14 +35,12 @@
         </form>
         <nav class="meta">
          <ul>
-            <li><a href="html/likebook.html"><img src="img/likebook-icon.png" width=15px height=auto/>Likebook</a></li>
-            <li><a href="layout_tool/layout.html"><img src="img/designboard-icon.png" width=15px height=auto/>Designboard</a></li>
+            <a href="html/likebook.html"><li><img src="img/likebook-icon.png" width=15px height=auto/>Likebook</li></a>
+            <a href="layout_tool/layout.html"><li><img src="img/designboard-icon.png" width=15px height=auto/>Designboard</li></a>
 
-    </ul>
-</nav>
-<a href="#" class="logo">
-    <img src="img/logo.png"/>
-</a>
+        </ul>
+    </nav>
+    </div>
 
 <nav class="main">
  <ul>

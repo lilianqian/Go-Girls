@@ -103,7 +103,7 @@ function closeSinglePage() {
 function loadLikeSinglePage(tag) {
 	switch (tag){
 		case "Living room":
-			window.location = "../html/livingroom.html";
+			window.location = "../html/likebookSingle.html#livingroom";
 			break;
 		case "Bedroom":
 			window.location = "../html/likebookSingle.html#bedroom";
@@ -136,7 +136,25 @@ function makeSingleLikeBookPage() {
 	var tag = document.URL.substring(document.URL.indexOf("#")+1);
 	$("#likebook_back").append("<a>"+tag+"</a>");
 	switch (tag) {
-		case "bedroom":
+	case "livingroom":
+
+			for (var i = 0; i < 13;i++) {
+				var imgUrl = "../img/livingroom/lv" + (i+1) +".jpg";
+
+				var mainDiv = $('<div class="show">\
+		                <img class="mainimg"/>\
+		                <a href="#" class="delete"><img class="like" src="../img/liked.png" /></a>\
+		                <p>Dear Lillie Fall Home Tour - I love this peaceful bedroom.</p>\
+		                <p><img class="numlike" src="../img/liked.png" />123</p></div>');
+
+				mainDiv.find(".mainimg").attr("src",imgUrl);
+
+				$("div.column#col-" + (i%3+1)).append(mainDiv);
+
+			}
+		break;
+
+	case "bedroom":
 
 			for (var i = 0; i < 55;i++) {
 				var imgUrl = "../img/bedroom/bd" + (i+1) +".jpg";

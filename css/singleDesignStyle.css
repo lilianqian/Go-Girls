@@ -18,6 +18,12 @@ section.single-design-page {
     
 }
 
+.single_mainimg {
+	width:70%;
+	display:inline-block;
+	padding:0 8% 0 8%;
+}
+
 
 #single_column {
 	
@@ -97,4 +103,36 @@ div#single_column_R_wrapper p:nth-of-type(2){
     margin: auto; 
     height: auto;
     width: 100%;
+}
+
+/* been viewed on phone screen, resolution at most 500px */
+@media screen and (max-width: 767px) {
+#single_column {
+	width:100%;
+	padding: 0;
+	margin-top: 20px;
+}
+#single_column_R {
+	width:100%;
+	padding: 0;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.single_mainimg {
+	width:90%;
+	display:block;
+	margin: 30px auto;
+	padding: 0;
+
+}
+
+.single_imgwrapper {
+	width: 90%;
+	overflow: hidden;
+	margin: 30px auto;
+	border-radius: 5px;
+}
+
+
 }
