@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width-device-width, initial-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
 
 </head>
 
@@ -33,15 +34,16 @@
                 <input id="search" type="search" >
                 
             </form>
+        </div>
             <nav class="meta">
                 <ul>
-                    <li><a href="../html/likebook.html"><img src="../img/likebook-icon.png" width=15px height=auto/>Likebook</a></li>
-                    <li><a href="../layout_tool/layout.html"><img src="../img/designboard-icon.png" width=15px height=auto/>Designboard</a></li>
+                    <a href="../html/likebook.html"><li><img src="../img/likebook-icon.png" width=15px height=auto/>Likebook</li></a>
+                    <a href="../layout_tool/layout.html"><li><img src="../img/designboard-icon.png" width=15px height=auto/>Designboard</li></a>
                     
                     
                 </ul>
             </nav>
-        </div>
+        
 
         
         <nav class="main">
@@ -59,6 +61,10 @@
     </header>
 
 	<div id="layout_all">
+        <div id ="mobile_forbidden">
+            <p id="mobile_forbidden_text"><b>Sorry...</b></br>Please use a computer to get access to our designboard.</p>
+            <div id="mobile_forbidden_bg"></div>
+        </div>
 		<div id="layout_board" ondrop="drop(event)" ondragover="allowDrop(event)">
 			<!--div id="layout_board_toolbar">
 				<div class="layout_board_tool">Upload Floor Plan</div>
@@ -70,7 +76,9 @@
 
 		<div id="layout_drop">
 			<div id="layout_drop_header">Product</div>
-			<div id="layout_drop_box">
+            <div id="layout_drop_box_wrapper">
+			     <div id="layout_drop_box">
+                 </div>
 			</div>
 		</div>
 		<div class="clear"></div>

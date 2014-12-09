@@ -43,11 +43,11 @@ function loadFurnitureIcon(fName, i) {
 
 		var img = $(furHtml[0]);
 		img.attr("class","fur_icon");
-		div.append(img);
+		//div.append(img);
 
 		div.css({
 			"overflow":"visible",
-			//"background":"url('image/icon/"+fName+"')",
+			"background":"url('image/icon/"+fName+"')",
 			"left":60 * (i % 2),
 			"top":60 * Math.floor(i / 2),
 			"background-size": "cover"

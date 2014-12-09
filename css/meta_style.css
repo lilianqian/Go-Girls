@@ -3,9 +3,8 @@
 
 
 div#header_line{
-	position: relative;
-	width: 100%;
-	height: 100%;
+	display: none;
+
 }
 
 
@@ -13,8 +12,10 @@ div#header_line{
 	display: none;
 }
 nav.meta {
+	position: relative;
 	width: 100%;
 	padding: 0;
+	right: 0;
 
 
 }
@@ -25,6 +26,13 @@ nav.meta {
 	padding: 20px 0;
 	margin: 0;
 
+}
+
+.meta ul a{
+	vertical-align: center;
+	padding: 20px 0;
+
+
 	background: -moz-linear-gradient(45deg,  #6eae43 0%, #9ecb3a 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#6eae43), color-stop(100%,#9ecb3a)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(45deg,  #6eae43 0%,#9ecb3a 100%); /* Chrome10+,Safari5.1+ */
@@ -32,11 +40,13 @@ nav.meta {
 	background: -ms-linear-gradient(45deg,  #6eae43 0%,#9ecb3a 100%); /* IE10+ */
 	background: linear-gradient(45deg,  #6eae43 0%,#9ecb3a 100%); /* W3C */
 }
-
-.meta ul li a{
-	vertical-align: center;
+.meta ul a:hover{
+	background: black;
 }
 
+a.logo{
+	z-index:-100;
+}
 nav.main {
 	margin-top:20px;
 }
@@ -46,7 +56,7 @@ section div.column {
 	float: none;
 }
 
-a.logo {
+a.logo{
 	margin: 50px auto;
 }
 
