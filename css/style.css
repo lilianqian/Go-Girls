@@ -196,8 +196,13 @@ input[value] {
 
 .combine_space {
     display: inline-block;
-    padding: 0 15px 20px 0;
+    
 }
+
+.combine_space:first-child {
+    padding: 0 15px 20px 0px;
+}
+
 .combine_space li {
     text-align: left;
     padding-bottom: 10px;
@@ -337,7 +342,8 @@ input[value] {
 }
 
 .combine_color li {
-    display: inline-block;
+    /*display: inline-block;*/
+    float: left;
 }
 
 
@@ -581,7 +587,9 @@ div.like_tag {
     position: absolute;
     top:30%;
     left:35%;
-    width:30%;
+    /* width:30%; */
+    display: block;
+    margin:0 auto;
     
     padding:10px;
     color: white;

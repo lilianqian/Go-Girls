@@ -60,4 +60,8 @@ a.logo{
 	margin: 50px auto;
 }
 
+li.target {
+	padding-right: 0px;
+}
+
 }

@@ -226,7 +226,7 @@ div#mobile_forbidden{
 }
 
 /* been viewed on phone screen, resolution at most 500px */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
 
   div#layout_all {
     position: relative;
@@ -282,6 +282,10 @@ div#mobile_forbidden{
 
   nav.meta{
     margin: 0;
+  }
+
+  .layout_furniture {
+    display: none;
   }
 
 }
