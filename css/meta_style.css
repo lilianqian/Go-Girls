@@ -41,6 +41,7 @@ nav.meta {
 	background: linear-gradient(45deg,  #6eae43 0%,#9ecb3a 100%); /* W3C */
 }
 .meta ul a:hover{
+	color:white;
 	background: black;
 }
 

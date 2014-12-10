@@ -195,13 +195,11 @@ input[value] {
 }
 
 .combine_space {
-    display: inline-block;
+    float:left;
     
 }
 
-.combine_space:first-child {
-    padding: 0 15px 20px 0px;
-}
+
 
 .combine_space li {
     text-align: left;
