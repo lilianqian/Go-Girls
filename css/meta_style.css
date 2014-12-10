@@ -40,14 +40,19 @@ nav.meta {
 	background: -ms-linear-gradient(45deg,  #6eae43 0%,#9ecb3a 100%); /* IE10+ */
 	background: linear-gradient(45deg,  #6eae43 0%,#9ecb3a 100%); /* W3C */
 }
-.meta ul a:hover{
-	color:white;
-	background: black;
-}
 
 a.logo{
 	z-index:-100;
 }
+
+.target {
+		width: 30%;
+		padding: 0;
+}
+.combine_space{
+    padding: 0;
+}
+
 nav.main {
 	margin-top:20px;
 }

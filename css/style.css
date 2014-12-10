@@ -195,7 +195,7 @@ input[value] {
 }
 
 .combine_space {
-    display: inline-block;
+    float:left;
     
 }
 
@@ -507,6 +507,7 @@ footer div hr{
 footer div.contact img{
 	display:block;
 	width:15%;
+    min-width: 50px;
 	height:auto;
 	margin:0 auto;
 	}
@@ -608,7 +609,7 @@ cursor:pointer;
 }
 
 #likebook_back {
-    color: #6eae43;
+    color: #6eae43;c
 }
 
 div.likebook {

@@ -6,13 +6,13 @@ $(document).ready(function() {
 		if (counter % 2 === 0){		
 			$("ul#gallery_selection").css("max-height","1000px");
 				counter = counter+1;
+	
 				
 		
 		} else {
 			$("ul#gallery_selection").css("max-height","0px");
 					counter = counter+1;
 					
-			
 		}
 	});
 
