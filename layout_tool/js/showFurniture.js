@@ -25,6 +25,10 @@ var wardrobeFileName = ["wardrobe/w1.jpg","wardrobe/w2.jpg","wardrobe/w3.jpg","w
 
 var cradleFileName = ["cradle/cr1.jpg","cradle/cr2.jpg","cradle/cr3.jpg","cradle/cr4.jpg","cradle/cr5.jpg","cradle/cr6.jpg","cradle/cr7.jpg","cradle/cr8.jpg","cradle/cr9.jpg","cradle/cr10.jpg","cradle/cr11.jpg","cradle/cr12.jpg","cradle/cr13.jpg","cradle/cr14.jpg","cradle/cr15.jpg","cradle/cr16.jpg","cradle/cr17.jpg","cradle/cr18.jpg","cradle/cr19.jpg","cradle/cr20.jpg","cradle/cr21.jpg"];
 
+var sofaFileName = ["sofa/sofa1"];
+
+var stairsFileName = ["stairway/st1.jpg","stairway/st2.jpg","stairway/st3.jpg","stairway/st4.jpg","stairway/st5.jpg","stairway/st6.jpg","stairway/st7.jpg","stairway/st8.jpg","stairway/st9.jpg",];
+
 function loadFurniturePic(str) {
 	switch (str) {
 		case "armchair":
@@ -65,6 +69,12 @@ function loadFurniturePic(str) {
 			break;	
 		case "cradle":
 			showAll("cradle", cradlePicFileName);
+			break;	
+		case "sofa":
+			showAll("sofa", sofaPicFileName);
+			break;	
+		case "stairs":
+			showAll("stairs", stairsPicFileName);
 			break;	
 		default:
 	}
