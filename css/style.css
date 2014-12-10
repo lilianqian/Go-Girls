@@ -85,7 +85,7 @@ span{
 #searchbox
 {
     float: left;  
-    padding: 15px 0 0 5%;
+    padding: 10px 0 0 5%;
     padding-bottom: 10px;
 }
 
@@ -108,6 +108,7 @@ input[value] {
     font-family :"Lato";
     color:white;
     font-weight: 600;
+    font-size: 11px;
     letter-spacing: 0.1em;
 }
 
@@ -142,7 +143,6 @@ input[value] {
 .meta ul li {
     display: inline-block; 
     font-size: 11px;
-    font-family: arial, clean, sans-serif;
     font-weight: 300;
     padding-right: 3%;
 	vertical-align:middle;
@@ -556,32 +556,15 @@ ul#gallery_selection {
     /*display: none;*/
 }
 
+
+
 .arrow {
-    width: 5px;
-    height: 5px;
-    border-top:2px solid #a2d400;
-    border-right:2px solid #a2d400;
-    display: inline-block;
+    width: 1%;
+    height: auto;
     margin-left: 5px;
-
-    
 }
 
-.down {
-    -moz-transform:rotate(135deg);
-    -webkit-transform:rotate(135deg);
-    -o-transform:rotate(135deg);
-    -ms-transform:rotate(135deg);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=-0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=-0.7071067811865476)";
-}
 
-.up {
-    -moz-transform:rotate(315deg);
-    -webkit-transform:rotate(315deg);
-    -o-transform:rotate(315deg);
-    -ms-transform:rotate(315deg);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.7071067811865476)";
-}
 
 /***like page**/
 div.like_tag {

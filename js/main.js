@@ -18,6 +18,7 @@ $(document).ready(function() {
 });
 
 
+
 function makeSingleDesignPage(obj) {
 	$("section.single-design-page").remove();
 

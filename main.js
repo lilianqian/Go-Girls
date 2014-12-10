@@ -6,11 +6,13 @@ $(document).ready(function() {
 		if (counter % 2 === 0){		
 			$("ul#gallery_selection").css("max-height","1000px");
 				counter = counter+1;
+            $(this).find("img").attr("src","img/arrow_down.png");
 				
 		
 		} else {
 			$("ul#gallery_selection").css("max-height","0px");
 					counter = counter+1;
+            $(this).find("img").attr("src","img/arrow.png");
 					
 			
 		}
@@ -230,11 +232,17 @@ $(document).ready(function() {
 	});
 });
 
+
+
+
+
 $('.delete').on('click', function(){
         var answer = confirm('are you sure?')
         if (answer){
             $(this).closest('.show').remove();
         }
 });
+
+
 
 
