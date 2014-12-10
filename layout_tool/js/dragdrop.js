@@ -6,6 +6,7 @@ var fileName = ["armchair-50.png","door-50.png",		"table-50.png",
 "crib-50.png",		"sofa-50.png",
 "door-50(2).png",		"stairs-50.png"];
 
+
 function loadAllFurnitureIcon() {
 	for (var i =0; i < fileName.length; i++) {
 		loadFurnitureIcon(fileName[i], i);
@@ -35,6 +36,27 @@ function loadFurnitureIcon(fName, i) {
 		div.on("mouseleave",function(){
 			$(this).find(".remove").attr("style","display:none;");
 			$(this).find(".dynDiv_resizeDiv_br").attr("style","display:none;");
+		});
+
+		div.on("mouseup", function(){
+
+			var rect = this.getBoundingClientRect();
+			var rect2 = $("#layout_board").get(0).getBoundingClientRect();
+
+			if (rect.top > rect2.bottom ||
+				rect.top  < rect2.top ||
+				rect.left > rect2.right ||
+				rect.left < rect2.left) {
+
+				console.log("here");
+
+				$(this).css({
+					"left":60 * (i % 2),
+					"top":60 * Math.floor(i / 2),
+					"width":"50px",
+					"height":"50px"
+				});
+			}
 		});
 
 		removeButton.on("click",function(e){

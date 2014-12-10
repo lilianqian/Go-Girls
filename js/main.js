@@ -15,6 +15,7 @@ $(document).ready(function() {
 		loadLikeSinglePage(tag);
 	});
 
+
 });
 
 
@@ -284,6 +285,21 @@ function makeSingleLikeBookPage() {
 			}
 		break;
 	}
+
+
+	$('a>.like').on({
+	    'click': function(e) {
+				
+
+	    		var src = ($(this).attr('src') === '../img/like.png')
+	            ? '../img/liked.png'
+	            : '../img/like.png';
+	        	$(this).attr('src', src);
+	        	e.preventDefault();
+	        	$(this).parent().parent().remove();
+	        
+	    }
+	});
 
 }
 	
