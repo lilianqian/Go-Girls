@@ -195,17 +195,19 @@ input[value] {
 }
 
 .combine_space {
-    display: inline-block;
+    display: block;
     
 }
 
-.combine_space:first-child {
+/*.combine_space:first-child {
     padding: 0 15px 20px 0px;
-}
+}*/
 
 .combine_space li {
+    width: 150px;
+    float: left;
     text-align: left;
-    padding-bottom: 10px;
+    padding: 10px 6px 10px 0;
 }
 
 
@@ -773,6 +775,6 @@ ul#gallery_selection {
 
 
 a#gallery_button:hover #gallery_selection {
-    max-height: 444px;
+    max-height: 1000px;
 }
 
