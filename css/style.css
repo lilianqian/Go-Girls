@@ -165,7 +165,7 @@ input[value] {
     font-weight: 600;
 }
 
-.meta ul li a:hover{
+.meta ul a li:hover{
 	color:#000;
 	
 	}
