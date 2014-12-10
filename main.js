@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$("a#gallery_button").on("click",function(){
 
 		if (counter % 2 === 0){		
-			$("ul#gallery_selection").css("max-height","444px");
+			$("ul#gallery_selection").css("max-height","1000px");
 				counter = counter+1;
 				
 		
