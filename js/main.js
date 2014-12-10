@@ -20,6 +20,7 @@ $(document).ready(function() {
 
 function makeSingleDesignPage(obj) {
 	$("section.single-design-page").remove();
+
 	var imgUrl = $(obj).find("img").attr("src");
 	var nextImgUrl = $(obj).parent().next("div.show").find("img.mainimg").attr("src");
 	var prevImgUrl = $(obj).parent().prev("div.show").find("img.mainimg").attr("src");
@@ -32,7 +33,7 @@ function makeSingleDesignPage(obj) {
 
 	var name = imgUrl.substring(imgUrl.indexOf("/")+1,imgUrl.indexOf("."));
 
-	var singleSection = $("<section class='single-design-page'></section>");
+	var singleSection = $("<section class='single-design-page'  onclick='closeSinglePage()'></section>");
 
 	var header = $('<div id="single"> \
 		<img class="single_home" src="img/Btn_exit.png" width=20px height=auto onclick="closeSinglePage()">\

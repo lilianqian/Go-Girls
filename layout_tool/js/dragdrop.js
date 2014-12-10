@@ -54,6 +54,8 @@ function loadFurnitureIcon(fName, i) {
 		//div.append(img);
 
 		div.css({
+			"max-width":"160px",
+			"max-height":"160px",
 			"overflow":"visible",
 			"background":"url('image/icon/"+fName+"')",
 			"left":60 * (i % 2),
